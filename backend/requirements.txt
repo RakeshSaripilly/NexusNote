@@ -1,0 +1,18 @@
+# Web Framework & API Server
+fastapi>=0.110.0
+uvicorn[standard]>=0.28.0
+python-multipart>=0.0.9
+pydantic>=2.6.0
+python-dotenv>=1.0.1
+
+# Graph Database & Vector Search
+neo4j>=5.18.0
+
+# Document Ingestion & OCR
+PyMuPDF>=1.23.0
+pytesseract>=0.3.10
+Pillow>=10.2.0
+
+# Embedding Model & Local AI
+sentence-transformers>=2.5.0
+ollama>=0.1.7
