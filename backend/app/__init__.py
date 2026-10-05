@@ -1,0 +1,1 @@
+"""NexusNote FastAPI backend package."""

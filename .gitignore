@@ -1,1 +1,23 @@
+# Secrets
 backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Extracted visual artifacts (runtime-generated, not source)
+backend/static/artifacts/*
+!backend/static/artifacts/.gitkeep
+
+# Node / Vite
+node_modules/
+frontend/dist/
+.vite/
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

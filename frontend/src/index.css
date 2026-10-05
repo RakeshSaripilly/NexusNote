@@ -1,0 +1,82 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply h-full;
+  }
+
+  body {
+    @apply bg-slate-950 text-slate-200 antialiased;
+    font-family:
+      ui-sans-serif,
+      system-ui,
+      -apple-system,
+      'Segoe UI',
+      Roboto,
+      sans-serif;
+  }
+
+  /* Slim dark scrollbars inside the drawer and gallery. */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #334155 transparent;
+  }
+
+  *::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-slate-700;
+  }
+
+  *::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-600;
+  }
+}
+
+/* React Flow dark-theme overrides. */
+.react-flow__attribution {
+  display: none;
+}
+
+.react-flow__edge-text {
+  @apply fill-slate-400 text-[10px];
+}
+
+.react-flow__edge-textbg {
+  fill: #0f172a;
+}
+
+.react-flow__handle {
+  transition: background-color 150ms ease;
+}
+
+.react-flow__node.selected {
+  z-index: 10;
+}
+
+.react-flow__minimap-mask {
+  fill: rgba(2, 6, 23, 0.75);
+}
+
+.react-flow__controls-button {
+  @apply border-slate-700 bg-slate-900 text-slate-300;
+}
+
+.react-flow__controls-button:hover {
+  @apply bg-slate-800 text-white;
+}
+
+.react-flow__controls-button svg {
+  fill: currentColor;
+}
